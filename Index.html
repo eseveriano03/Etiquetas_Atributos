@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etiquetas y Atributos</title>
+</head>
+<body>
+
+  <h2> Etiquetas y Atributos </h2>
+
+  <!-- Atributo "hidden" || Etiqueta <hgroup>-->
+  <h3> Estructura. </h3>
+
+  <h1> Los encabezados </h1>
+  <hgroup hidden>
+
+      <h2 >Se agrupan</h2>
+      <h3 style="background-color: slategrey"> Pero desaparecen si usas "hidden"</h3>
+
+  </hgroup>
+  <!-- Atributo "draggable" || Etiqueta <h5>-->
+  <h5 draggable="true" > Si tu navegador lo permite, puedes arrastrar este párrafo. </h5>
+
+  <h3> Agrupación de contenido. </h3>
+
+  <!-- Atributo "Align" || Etiqueta <p>-->
+  <p align = "center"> "Align" Este atributo se encarga de centrar el texto.</p>
+
+  <br>
+  <!-- Atributo "Title" || Etiqueta <a> -->
+  <p> "Title" Muestra un título emergente al pasar el cursor por encima del link. <a title=" Visita al museo" href="https://www.artstation.com/"> Arte </a>.</p>
+
+  <h3> Semántica. </h3>
+
+  <!-- Atributo "Title" || Etiqueta <abbr> -->
+  <p> "Abbr" se encarga de <abbr title="Abreviar"> "Pon el cursor encima"</abbr> </p>
+
+  <!-- Atributo "Style" || Etiqueta <Em> -->
+  <p style="color: #ff6600; font-size: 1.5em" > <em> "Style" Se encarga de agregar una fuente y color de texto distinto. </em></p>
+
+  <h3> Contenido Incrustado. </h3>
+
+  <!-- Atributo "Controls" || Etiqueta <audio>-->
+  <p> "Controls" Agrega controles para el audio incrustado.</p>
+  <audio controls>
+      <source src="mp3/sfx-metal1.mp3" type="audio/mp3">
+  </audio>
+
+  <br>
+  <p> "Lazy" El navegador carga esta imagen una vez que ingrese al área visible de la página.</p>
+  <!-- Atributo "loading" , "width", "height" || Etiqueta <img>-->
+  <img src="imgs/img.png" loading="lazy" width="50" height="50">
+
+  <br>
+
+  <h3> Tablas. </h3>
+
+  <!-- Atributo "border", "cellspacing" -->
+  <br> "Cellspacing" Ajusta la distancia que hay entre cada celda de la tabla.</br>
+
+  <!-- Atributo "bgcolor" || Etiqueta <th>-->
+  <br> "Bgcolor" Cambia el color del fondo de la celda seleccionada.</br>
+  <table class="default" border="4" cellspacing="5">
+
+      <br>
+
+      <tr>
+
+          <th bgcolor="#ff8c00">Artista</th>
+
+          <th  bgcolor="#7cfc00">Album</th>
+
+
+      </tr>
+
+      <tr>
+          <td>Joji</td>
+          <td>Ballads</td>
+      </tr>
+
+      <tr>
+          <td> The weeknd </td>
+          <td> After Hours</td>
+      </tr>
+
+      <tr>
+          <td> I Prevail</td>
+          <td> Trauma </td>
+      </tr>
+
+  </table>
+
+  <h3> Formularios. </h3>
+
+  <p>
+
+      <!-- Atributo "disabled" || Etiqueta <option>-->
+  <p> "Disabled" A pesar de que se muestra la opción, esta no se encuentra disponible.</p>
+
+      <select>
+
+          <option>Opción 1</option>
+          <option>Opción 2</option>
+          <option disabled> Opción 3</option>
+          <option> Opción 4</option>
+
+      </select>
+
+  </p>
+
+  <br>
+
+  <!-- Atributo "id" || Etiqueta <datalist>-->
+  <p> "Id" Es un identificador y debe ser único en el documento y puede ser utilizado para referirse al elemento desde vínculos, scripts, etc.</p>
+  <p>Kg <input type="number" name="Kilogramos" min="2" step="0.01" list="Cantidadkg"></p>
+
+  <datalist id="Cantidadkg">
+
+      <option> 10</option>
+      <option> 8</option>
+      <option> 6 </option>
+      <option> 4 </option>
+
+  </datalist>
+
+  <br>
+
+
+
+</body>
+</html>
